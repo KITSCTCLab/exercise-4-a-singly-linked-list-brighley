@@ -3,7 +3,7 @@ class Node:
     """
     Provide necessary documentation
     """
-    def__init__(self, data=None, next=None):
+    def_init_(self, data=None, next=None):
         """
         Provide necessary documentation
         """
@@ -17,7 +17,7 @@ class Node:
         -> data - stored associated data
         -> next - link to next node
     """
-    def__init__(self, data=None, next=None):
+    def_init__(self, data=None, next=None):
         """
         Initialises the Node with given attributes
         """
@@ -32,7 +32,7 @@ class LinkedList:
     Attributes
         -> self.head - contains first node of LinkedList, None if list empty
     """
-    def __init__(self):
+    def_init__(self):
         """
         Initialize the head
         """
