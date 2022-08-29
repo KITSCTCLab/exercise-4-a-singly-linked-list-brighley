@@ -1,4 +1,6 @@
 from typing import Optional
+
+
 class Node:
     """
     Provide necessary documentation
@@ -9,7 +11,11 @@ class Node:
         """
         self.data = data
         self.next = next
+
+
 from typing import Optional
+
+
 class Node:
     """
     This class describes Node objects to act as elements of the LinkedList
@@ -17,12 +23,15 @@ class Node:
         -> data - stored associated data
         -> next - link to next node
     """
-    def__init__(self, data=None, next=None):
+
+    def __init__(self, data=None, next=None):
         """
         Initialises the Node with given attributes
         """
         self.data = data
         self.next = next
+
+
 class LinkedList:
     """
     This class implements LinkedList using Node objects
@@ -32,11 +41,13 @@ class LinkedList:
     Attributes
         -> self.head - contains first node of LinkedList, None if list empty
     """
-    def__init__(self):
+
+    def __init__(self):
         """
         Initialize the head
         """
         self.head = None
+
     def insert_at_end(self, data):
         """
         Insert node at end of the list
@@ -50,6 +61,7 @@ class LinkedList:
             while current.next is not None:
                 current = current.next
             current.next = new
+
     def status(self):
         """
         It prints all the elements of list.
@@ -60,11 +72,14 @@ class LinkedList:
             elements.append(current.data)
             current = current.next
         print(elements)
+
+
 class Solution:
     """
     Class implementing functions to add numbers in a LinkedListT
     
     """
+
     def addTwoNumbers(self, first_list: Optional[LinkedList], second_list: Optional[LinkedList]) -> Optional[
         LinkedList]:
         """
@@ -77,6 +92,7 @@ class Solution:
         for digit in list(map(int, str(result)[::-1])):
             sum_list.insert_at_end(digit)
         return sum_list
+
     def get_num(self, l: Optional[LinkedList]) -> int:
         """
         :param l: LinkedList with non-negative integers
@@ -90,6 +106,8 @@ class Solution:
             num = str(curr.data) + num
             curr = curr.next
         return int(num)
+
+
 # Do not edit the following code
 # Create an instance for LinkedList
 first_list = LinkedList()
